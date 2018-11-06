@@ -1,0 +1,93 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("6d9b12aa-6c16-404c-887f-5ab165513a42",
+	"00000000-0000-0000-0000-000000000000",
+	'udp',
+	'');
+INSERT INTO C_EP
+	VALUES ("55add525-4f71-4791-8d88-68f791bc8526",
+	"6d9b12aa-6c16-404c-887f-5ab165513a42",
+	-1,
+	'recv',
+	'');
+INSERT INTO C_AS
+	VALUES ("55add525-4f71-4791-8d88-68f791bc8526",
+	'recv',
+	'',
+	1,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("bbf7b410-cff7-4309-b3da-34b4b6b9d1b1",
+	"55add525-4f71-4791-8d88-68f791bc8526",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'str',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("6802d9f0-1823-4952-8437-41c10013ddb7",
+	"6d9b12aa-6c16-404c-887f-5ab165513a42",
+	-1,
+	'send',
+	'');
+INSERT INTO C_IO
+	VALUES ("6802d9f0-1823-4952-8437-41c10013ddb7",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'send',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("b6c8be4f-6be7-4aca-a6bc-c85a35cccf08",
+	"6802d9f0-1823-4952-8437-41c10013ddb7",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'str',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("f1b7c9a3-bf48-4b8d-803d-f7af5ed7a0f6",
+	"6d9b12aa-6c16-404c-887f-5ab165513a42",
+	-1,
+	'open',
+	'');
+INSERT INTO C_IO
+	VALUES ("f1b7c9a3-bf48-4b8d-803d-f7af5ed7a0f6",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'open',
+	'',
+	0,
+	'',
+	"6802d9f0-1823-4952-8437-41c10013ddb7");
+INSERT INTO C_EP
+	VALUES ("3c9cce21-26fe-486f-b6b8-9ee73713aa9c",
+	"6d9b12aa-6c16-404c-887f-5ab165513a42",
+	-1,
+	'close',
+	'');
+INSERT INTO C_IO
+	VALUES ("3c9cce21-26fe-486f-b6b8-9ee73713aa9c",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'close',
+	'',
+	0,
+	'',
+	"f1b7c9a3-bf48-4b8d-803d-f7af5ed7a0f6");
+INSERT INTO PE_PE
+	VALUES ("6d9b12aa-6c16-404c-887f-5ab165513a42",
+	1,
+	"b40cb96d-7f3a-4c50-aee3-2a93a3ecc992",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("b40cb96d-7f3a-4c50-aee3-2a93a3ecc992",
+	"d25c3a4c-f497-4e3d-b314-9177adc7ed8f",
+	"d25c3a4c-f497-4e3d-b314-9177adc7ed8f",
+	'tello',
+	'',
+	0,
+	'../tello.xtuml');

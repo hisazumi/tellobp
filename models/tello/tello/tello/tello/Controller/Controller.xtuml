@@ -1,0 +1,56 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("1b7727db-3c4e-4670-b30e-f1403a978eb4",
+	'Controller',
+	1,
+	'Controller',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("23c65728-d0bf-4751-88b1-01997c848429",
+	"1b7727db-3c4e-4670-b30e-f1403a978eb4",
+	'timer',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	0,
+	'create event instance timeout of Controller_A7:''timeout'' to Controller class;
+timer = TIM::timer_start( event_inst:timeout, microseconds:param.microseconds );
+
+',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("21b5cf29-f932-4b1e-97a4-d7db1f8a8c81",
+	"23c65728-d0bf-4751-88b1-01997c848429",
+	'microseconds',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"1b7727db-3c4e-4670-b30e-f1403a978eb4");
+INSERT INTO O_ID
+	VALUES (1,
+	"1b7727db-3c4e-4670-b30e-f1403a978eb4");
+INSERT INTO O_ID
+	VALUES (2,
+	"1b7727db-3c4e-4670-b30e-f1403a978eb4");
+INSERT INTO PE_PE
+	VALUES ("1b7727db-3c4e-4670-b30e-f1403a978eb4",
+	1,
+	"4a1f2b80-7b05-4b9b-a111-3b23bf8289df",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("4a1f2b80-7b05-4b9b-a111-3b23bf8289df",
+	"00000000-0000-0000-0000-000000000000",
+	"d25c3a4c-f497-4e3d-b314-9177adc7ed8f",
+	'tello',
+	'',
+	0,
+	'../tello.xtuml');

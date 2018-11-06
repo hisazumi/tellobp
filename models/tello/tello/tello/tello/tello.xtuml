@@ -1,0 +1,131 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("4a1f2b80-7b05-4b9b-a111-3b23bf8289df",
+	"00000000-0000-0000-0000-000000000000",
+	"d25c3a4c-f497-4e3d-b314-9177adc7ed8f",
+	'tello',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("772ebc9b-ddfd-4c01-97ed-79e003f8ca00",
+	112,
+	"4a1f2b80-7b05-4b9b-a111-3b23bf8289df",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'tello::tello::tello::tello');
+INSERT INTO GD_GE
+	VALUES ("144bb1b2-a1b8-4854-aefd-cea41857e8ad",
+	"772ebc9b-ddfd-4c01-97ed-79e003f8ca00",
+	"1b7727db-3c4e-4670-b30e-f1403a978eb4",
+	21,
+	0,
+	'tello::tello::tello::tello::Controller');
+INSERT INTO GD_SHP
+	VALUES ("144bb1b2-a1b8-4854-aefd-cea41857e8ad");
+INSERT INTO GD_NCS
+	VALUES ("144bb1b2-a1b8-4854-aefd-cea41857e8ad");
+INSERT INTO DIM_ND
+	VALUES (204.000000,
+	156.000000,
+	"144bb1b2-a1b8-4854-aefd-cea41857e8ad");
+INSERT INTO DIM_GE
+	VALUES (4272.000000,
+	3156.000000,
+	"144bb1b2-a1b8-4854-aefd-cea41857e8ad",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("144bb1b2-a1b8-4854-aefd-cea41857e8ad",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_DIA
+	VALUES ("772ebc9b-ddfd-4c01-97ed-79e003f8ca00",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("c79781e4-82a1-4117-bb57-7bf8eec81514",
+	"00000000-0000-0000-0000-000000000000",
+	'setup',
+	'',
+	'generate Controller_A1:''connect'' to Controller class;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("c79781e4-82a1-4117-bb57-7bf8eec81514",
+	1,
+	"4a1f2b80-7b05-4b9b-a111-3b23bf8289df",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("76e27425-6a8d-440a-b87c-036cdba503df",
+	"00000000-0000-0000-0000-000000000000",
+	'recv',
+	'',
+	'if (param.str == "ok")
+	generate Controller_A2:''ok'' to Controller class;
+elif (param.str == "error")
+	generate Controller_A6:''error'' to Controller class;
+end if;
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO S_SPARM
+	VALUES ("eed1a359-8864-4219-94ea-caf71d7406e7",
+	"76e27425-6a8d-440a-b87c-036cdba503df",
+	'str',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'select any controller instance of Controller;
+if(param.str == "ok")
+	generate Controller_A2:''ok'' to controller;
+end if;
+');
+INSERT INTO PE_PE
+	VALUES ("76e27425-6a8d-440a-b87c-036cdba503df",
+	1,
+	"4a1f2b80-7b05-4b9b-a111-3b23bf8289df",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("4a1f2b80-7b05-4b9b-a111-3b23bf8289df",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"745a389f-a79f-431d-8e78-3e1cf6c9e9b2",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("745a389f-a79f-431d-8e78-3e1cf6c9e9b2",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'tello',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../tello.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("d25c3a4c-f497-4e3d-b314-9177adc7ed8f",
+	'tello',
+	1,
+	'../../../tello.xtuml');
