@@ -53,8 +53,6 @@ UserInitializationCalloutf( void )
 void
 UserPreOoaInitializationCalloutf( void )
 {
-  /* Insert implementation specific code here.  */
-  SYS_USER_CO_PRINTF( "UserPreOoaInitializationCallout\n" )
 }
 
 /*
@@ -68,8 +66,7 @@ UserPreOoaInitializationCalloutf( void )
 void
 UserPostOoaInitializationCalloutf( void )
 {
-  /* Insert implementation specific code here.  */
-  SYS_USER_CO_PRINTF( "UserPostOoaInitializationCallout\n" )
+	udp_open();
 }
 
 /*
@@ -95,8 +92,7 @@ UserBackgroundProcessingCalloutf( void )
 void
 UserPreShutdownCalloutf( void )
 {
-  /* Insert implementation specific code here.  */
-  SYS_USER_CO_PRINTF( "UserPreShutdownCallout\n" )
+	udp_close();
 }
 
 /*

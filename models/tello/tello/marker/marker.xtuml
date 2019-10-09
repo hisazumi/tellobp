@@ -1,0 +1,44 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("e065e35d-45fb-454a-9b8a-777324d08310",
+	"00000000-0000-0000-0000-000000000000",
+	'marker',
+	'');
+INSERT INTO C_EP
+	VALUES ("e2291590-8db1-4013-8899-9a828c2c1622",
+	"e065e35d-45fb-454a-9b8a-777324d08310",
+	-1,
+	'detected',
+	'');
+INSERT INTO C_IO
+	VALUES ("e2291590-8db1-4013-8899-9a828c2c1622",
+	"ba5eda7a-def5-0000-0000-000000000000",
+	'detected',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("0db57ca6-f875-4a24-a1e0-75748ad4ef0c",
+	"e2291590-8db1-4013-8899-9a828c2c1622",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'id',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("e065e35d-45fb-454a-9b8a-777324d08310",
+	1,
+	"b40cb96d-7f3a-4c50-aee3-2a93a3ecc992",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("b40cb96d-7f3a-4c50-aee3-2a93a3ecc992",
+	"d25c3a4c-f497-4e3d-b314-9177adc7ed8f",
+	"d25c3a4c-f497-4e3d-b314-9177adc7ed8f",
+	'tello',
+	'',
+	0,
+	'../tello.xtuml');
